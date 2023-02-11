@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+ {% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="{%static 'css/my_style.css'%}">
+
+  </head>
+  <body>
+  <h1>Registration Page</h1>
+  <br>
+  <br>
+    <form class="" action="index.html" method="post">
+      Name:<input type="text" name="" value="">
+      <br>
+      Age:<input type="number" name="" value="">
+      <br>
+      <label for="Gender">Gender: </label>
+       <label for="male">M</label>
+       <input type="radio" name="Gender" value="">
+       <label for="female">F</label>
+       <input type="radio" name="Gender" value="">
+      <br>
+      Email:<input type="text" name="" value="">
+      <br>
+      Mob no.:<input type="text" name="" value="">
+      <br>
+      <button type="button" name="button">Submit</button>
+    </form>
+    <br>
+    <h2>{{insert_me}}</h2>
+  <br>
+  <img src="{% static 'image/hope.jpeg' %}" alt="Sorry Image could not Process">
+
+  </body>
+</html>
